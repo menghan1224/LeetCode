@@ -1,3 +1,7 @@
+package Easy;
+
+import DataStructure.TreeNode;
+
 /**
  * Created by 28479 on 2017/6/1.
  */
