@@ -4,6 +4,9 @@ package Easy;
  * Created by 28479 on 2017/6/1.
  */
 public class FindDifference {
+    public static void main(String[] args){
+        System.out.println(new FindDifference().findTheDifference("abc","bacd"));
+    }
     public char findTheDifference(String s, String t) {
         int len=t.length();
         char c=t.charAt(len-1);
