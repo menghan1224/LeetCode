@@ -6,6 +6,9 @@ import java.util.Stack;
  * Created by 28479 on 2017/6/6.
  */
 public class DecodeString {
+    public static void main(String[] args){
+        new DecodeString().decodeString("3[a2[c]]");
+    }
     public String decodeString(String s) {
         String res = "";
         Stack<Integer> countStack = new Stack<>();
@@ -27,6 +30,7 @@ public class DecodeString {
             }
             else if (s.charAt(idx) == ']') {
                 StringBuilder temp = new StringBuilder (resStack.pop());
+                System.out.println(resStack.size());
                 int repeatTimes = countStack.pop();
                 for (int i = 0; i < repeatTimes; i++) {
                     temp.append(res);
