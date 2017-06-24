@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class LongestIncreasingSubsequence {
     public static void main(String[] args){
 
-       System.out.print(Arrays.binarySearch(new int[]{2,5,1},0,3,3));
+       System.out.print(Arrays.binarySearch(new int[]{2,0,1},0,0,3));
     }
     public int lengthOfLIS(int[] nums) {
         int[] dp = new int[nums.length];
