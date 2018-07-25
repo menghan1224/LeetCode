@@ -14,6 +14,7 @@ public class WiggleSortII {
         int median = findKthLargest(nums, (nums.length + 1) / 2);
         int n = nums.length;
         int left = 0, i = 0, right = n - 1;
+        for(int num:nums) System.out.println(num);
         while (i <= right) {
             if (nums[newIndex(i,n)] > median) {
                 swap(nums, newIndex(left++,n), newIndex(i++,n));
